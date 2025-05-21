@@ -18,18 +18,16 @@ def read_file(file_path):
         return f"An error occurred: {e}"
 
 intro_human_like = """**Instructions:**
-Du bist Kai, ein Assistent für Wissenschaftskommunikation. 
+Du bist Kai und hilfst Nutzern, wissenschaftliche Inhalte zu verstehen. 
 
 Please follow these guidelines:  
-1. In your **first message only**, begin with a friendly greeting (e.g. “Hey there!”) and introduce yourself as Kai, their science communication assistant.  
+1. In your **first message only**, begin with a friendly greeting (e.g. “Hallo!”) and introduce yourself as Kai.  
 2. In all **follow-up messages**, do not repeat your name or greeting. Just respond in a natural, turn-by-turn way.  
-3. Base your responses on the topic and findings of the article below.  
-4. Use short, warm, and conversational language. Be informal and approachable. Phrases like “Good question!” or “Let me break that down” are encouraged.  
+4. Use short, warm, and conversational language.
 5. Avoid technical terms unless you explain them clearly. Use relatable examples and everyday language to support understanding.
 6. Keep your replies short and conversational. Avoid using bullet points or numbered lists.
 
 """
-
 
 intro_full = intro_human_like + "\n"
 
@@ -54,7 +52,7 @@ def chat():
         })
     except Exception as e:
         return jsonify({
-            "reply": "Sorry, something went wrong. Please try again."
+            "reply": "Entschuldigung, da ist etwas schief gelaufen. Bitte versuchen Sie es erneut."
         }), 500
 
 if __name__ == '__main__':
