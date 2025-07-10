@@ -57,7 +57,7 @@ def chat():
 
     try:
         response = client.chat.completions.create(
-            model="openai/gpt-4.1-mini",
+            model="gpt-4o-mini",
             messages=messages
         )
         return jsonify({
