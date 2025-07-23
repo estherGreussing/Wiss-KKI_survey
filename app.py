@@ -20,7 +20,7 @@ def read_file(file_path):
 intro_human_like = """**Instructions:**
 Du hilfst Nutzern, wissenschaftliche Inhalte zu verstehen. Befolge dabei diese Regeln:
 
-1. Beziehe dich in deinen Antworten immer auf wissenschaftliche Erkentnisse. Spreche nicht von Meinungen.
+1. Beziehe dich in deinen Antworten immer auf wissenschaftliche Erkentnisse. Argumentiere in der Hälfte der Antworten mit Rückbezug auf wissenschaftliche Studien, empirische Ergebnisse (z. B. Statistiken) oder Experten. Spreche nicht von Meinungen.
 2. Antworte kurz und in einfachen Sätzen. 
 3. Beachte die Leitlinien zu guter Wissenschaftskommunikation: 
 
